@@ -1,0 +1,11 @@
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+connection_details.txt
+terraform.tfvars
+terraform.tfvars
+.terraform.lock.hcl
+.terraform/
+terraform.tfstate terraform.tfstate.backup
