@@ -1,0 +1,39 @@
+# terraform.tfvars - Updated with local user support
+
+vast_host     = "10.143.11.203"
+vast_port     = 443
+vast_user     = "admin"
+vast_password = "123456"
+
+tenant_name   = "default"      # only the default tenant is supported
+
+user_name           = "research_curation_user"
+user_context        = "local"
+
+database_view_path  = "/research-curation-db"
+database_view_name  = "research_curation_db"
+
+s3_view_path        = "/research-curation-s3"
+s3_view_name        = "research_curation-s3"
+
+kafka_vip_pool_name = "research_curation_vip"
+
+kafka_view_path     = "/research-curation-kafka"
+kafka_view_name     = "research_curation-kafka"
+
+kafka_topic_file_ingested        = "research.curation.file.ingested"
+kafka_topic_metadata_extracted   = "research.curation.metadata.extracted"
+kafka_topic_quality_validated    = "research.curation.quality.validated"
+kafka_topic_catalog_updated      = "research.curation.catalog.updated"
+
+# Manual override options (only used if auto-discovery fails):
+# kafka_vip_pool_range_start = "10.143.11.220"
+# kafka_vip_pool_range_end   = "10.143.11.222"
+
+# kafka_zeek_topic = "siem_zeek_live_logs"
+# kafka_event_log_topic = "siem_fluentd_events"
+# kafka_topic_partitions = 3
+# kafka_topic_replication_factor = 1
+
+# OpenAI API configuration
+openai_api_key = "sk-your-openai-api-key-here"
